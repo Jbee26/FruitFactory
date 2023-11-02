@@ -13,7 +13,7 @@ public class FruitHQ {
     public FruitHQ(){
         // strawberry: red, triangle, 200, yes, 20
         Fruit strawberry;   //declare
-        strawberry = new Fruit(); //construct
+        strawberry = new Fruit("red", 200, 20, "triangle", true ); //construct
         strawberry.color="red";
         strawberry.shape="triangle";
         strawberry.numSeeds=200;
@@ -22,13 +22,25 @@ public class FruitHQ {
         strawberry.printInfo();
 
         Fruit pear;
-        pear = new Fruit();
-        pear.pcolor="green";
-        pear.pshape="oval";
-        pear.pnumSeeds=10;
-        pear.pisRipe=false;
-        pear.pnumBush=10;
+        pear = new Fruit("green", 10, 10, "oval", false );
+        pear.color="green";
+        pear.shape="oval";
+        pear.numSeeds=10;
+        pear.isRipe=false;
+        pear.numBush=10;
         pear.printInfo();
+
+
+        Fruit guava;
+        guava = new Fruit("green", 100, 20, "sphere", true);
+        guava.color="green";
+        guava.shape="oval";
+        guava.numSeeds=10;
+        guava.isRipe=false;
+        guava.numBush=10;
+        guava.printInfo();
+
+
 
 
 

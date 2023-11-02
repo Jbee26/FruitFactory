@@ -11,45 +11,35 @@ public class Fruit {
     public boolean isRipe;
     public int numBush;
 
-    public String pcolor;
 
-    public String pshape;
-    public int pnumSeeds;
-    public boolean pisRipe;
-    public int pnumBush;
 
 
 
     public void printInfo(){
 
-        System.out.println("Strawberries are " + color);
-        System.out.println("The shape of a strawberry is " + shape);
-        System.out.println("The number of seeds in a strawberry is " + numSeeds);
+        System.out.println("The fruit is " + color);
+        System.out.println("The fruit is " + shape);
+        System.out.println("The fruit has " + numSeeds + "seeds");
         if (isRipe==true) {
             System.out.println("The fruit is ripe :)");
         }
         else {
             System.out.println("The fruit is not ripe :(");
         }
-        System.out.println("The number of strawberries in a bush is: " + numBush);
-
-        System.out.println("Pears are " + pcolor);
-        System.out.println(" The shape of a pear is a: " + pshape);
-        System.out.println("The number of seeds in a pear is " + pnumSeeds);
-        if (pisRipe==true) {
-            System.out.println("The pear is ripe :)");
-        }
-        else {
-            System.out.println("The pear is not ripe :(");
-        }
-        System.out.println("The number of pears in a tree is: " + pnumBush);
+        System.out.println("Number of fruit in a plant is " + numBush);
 
 
 
 
 
     }
-    public Fruit(){
+    public Fruit(String paramColor, int paramNumSeeds, int paramNumBush, String paramShape, boolean paramIsRipe){
+        color = paramColor;
+        numSeeds = paramNumSeeds;
+        numBush = (int)(Math.random()*100);
+        shape = paramShape;
+        isRipe = paramIsRipe;
+
 
 
 
